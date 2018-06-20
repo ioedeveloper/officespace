@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css',
               '../../assets/css/bootstrap.min.css',
               '../../assets/css/font-awesome.min.css',
-              '../../assets/css/style.css',
-              'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700'
+              '../../assets/css/style.css'
             ]
 })
 export class LoginComponent implements OnInit {
