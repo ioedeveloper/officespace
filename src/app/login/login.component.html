@@ -7,7 +7,7 @@
           <div class="account-logo">
             <a href="index.html"><img src="assets/img/logo2.png" alt="Focus Technologies"></a>
           </div>
-          <form action="https://dreamguys.co.in/smarthr/maroon/index.html">
+          <form #loginForm=''>
             <div class="form-group form-focus">
               <label class="control-label">Username or Email</label>
               <input class="form-control floating" type="text">
@@ -19,8 +19,11 @@
             <div class="form-group text-center">
               <button class="btn btn-primary btn-block account-btn" type="submit">Login</button>
             </div>
-            <div class="text-center">
+            <!-- <div class="text-left">
               <a href="forgot-password.html">Forgot your password?</a>
+            </div> -->
+            <div class="text-left">
+              <a routerLink='/signup'>New user? Create account</a>
             </div>
           </form>
         </div>
