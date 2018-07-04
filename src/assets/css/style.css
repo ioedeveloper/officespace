@@ -55,7 +55,7 @@ Version      : 1.0.3
 */
 
 html {height:100%;}
-body{font-family: 'Montserrat', sans-serif;font-size:13px;color:#333;background-color:#eff3f6;overflow-x: hidden;}
+body{font-family: 'Montserrat', sans-serif;font-size:13px;color:#333;background:#c31432; background: linear-gradient(#c31432, #240b36);overflow-x: hidden;}
 h1, h2, h3, h4, h5, h6{margin-top:0;}
 a:hover,
 a:active,

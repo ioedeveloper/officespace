@@ -1,11 +1,11 @@
 import { Component, OnInit, AfterContentChecked } from '@angular/core';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class LoginComponent implements OnInit, AfterContentChecked {
+export class RegisterComponent implements OnInit, AfterContentChecked {
 
   public loading = true;
 
