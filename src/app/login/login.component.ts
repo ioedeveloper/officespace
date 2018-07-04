@@ -5,18 +5,19 @@ import { Component, OnInit, AfterContentChecked } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit, AfterContentChecked {
+export class LoginComponent implements OnInit {
 
   public loading = true;
 
   constructor() { }
 
   ngOnInit() {
-  }
 
-  ngAfterContentChecked() {
-    // viewChild is set after the view has been initialized
-    this.loading = false;
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.loading = false;
+    }, 5000);
+
   }
 
 }
