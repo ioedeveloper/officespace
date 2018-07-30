@@ -8,25 +8,26 @@
           <div class="account-logo">
             <a href="index.html"><img src="assets/img/logo2.png" alt="Focus Technologies"></a>
           </div>
-          <form #registerForm=''>
+          <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
             <div class="form-group form-focus">
               <label class="control-label">Username</label>
-              <input class="form-control floating" type="text" required>
+              <input class="form-control floating" type="text" required name="username" ngModel #username="ngModel" />
             </div>
             <div class="form-group form-focus">
               <label class="control-label">Email</label>
-              <input class="form-control floating" type="text" required>
+              <input class="form-control floating" type="text" required name="email" ngModel #email="ngModel">
             </div>
             <div class="form-group form-focus">
               <label class="control-label">Password</label>
-              <input class="form-control floating" type="password" required>
+              <input class="form-control floating" type="password" required name="password" ngModel #password="ngModel">
             </div>
+            <label>{{error.password}}</label>
             <div class="form-group form-focus">
               <label class="control-label">Repeat Password</label>
-              <input class="form-control floating" type="password" required>
+              <input class="form-control floating" type="password" required name="rpassword" ngModel #rpassword="ngModel">
             </div>
             <div class="form-group text-center">
-              <button [disabled]="!registerForm.valid" class="btn btn-primary btn-block account-btn" type="submit">Register</button>
+              <button class="btn btn-primary btn-block account-btn" type="submit">Register</button>
             </div>
             <div class="text-center">
               <a routerLink='/signin'>Already have an account? Sign In</a>
